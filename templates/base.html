@@ -11,11 +11,22 @@
     <title>mytweets</title>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar navbar-center navbar-dark bg-dark navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a href="#" class="navbar-brand">Mytweets</a>
+            <p class="navbar-text -right">User Profile Page</p>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 20px">
     {% block content %}
         <h1>hello {{ name }}</h1>  
 
     {% endblock content %}
     </div>
-</body>
+    <nav class="navbar navbar-center navbar-dark bg-dark fixed-bottom " role="navigation">
+        <div class="container">
+            <a href="#" class="navbar-brand">Mytweets</a>
+            <p class="navbar-text -right">User Profile Page</p>
+        </div>
+    </nav></body>
 </html>

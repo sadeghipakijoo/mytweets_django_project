@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>profile page {{ params }}</h1>
+  <div class="row clearfix">
+    <div class="col-md-10">
+      <!-- <span>@{{ user.username }}</span> -->
+  {% for tweet in tweets  %}
+    <div class="well">
+        <span>@{{ tweet.created_by }} <br></span>
+        <span>{{ tweet.text }}</span>
+      </div>
+  {% endfor %}
+  </div>
+  </div>
+    
 {% endblock content %}
