@@ -21,6 +21,7 @@ class Index(View):
     def get(self, request):
         params = {}
         params['name'] = 'django'
+        print("test")
         return render(request, 'pages/index.html', params)
     def post(self, request):
         return HttpResponse('post request in index')
