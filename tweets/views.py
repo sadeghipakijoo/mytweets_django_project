@@ -21,7 +21,7 @@ class Index(View):
     def get(self, request):
         params = {}
         params['name'] = 'django'
-        print("test")
+        print("test my forked project")
         return render(request, 'pages/index.html', params)
     def post(self, request):
         return HttpResponse('post request in index')
